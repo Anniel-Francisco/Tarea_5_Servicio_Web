@@ -1,0 +1,24 @@
+{
+  "name": "tarea_5_servicio_web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anniel-Francisco/Tarea_5_Servicio_Web.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anniel-Francisco/Tarea_5_Servicio_Web/issues"
+  },
+  "homepage": "https://github.com/Anniel-Francisco/Tarea_5_Servicio_Web#readme",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "express": "^4.18.2"
+  }
+}
