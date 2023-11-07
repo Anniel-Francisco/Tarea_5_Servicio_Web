@@ -20,7 +20,6 @@ app.get("/contactos", async (req, res) => {
 // Endpoint para almacenar un nuevo contacto
 app.post("/contactos", async (req, res) => {
   try {
-    console.log(req.body);
     const nuevoContacto = {
       nombre: req.body.nombre,
       apellido: req.body.apellido,
