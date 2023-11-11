@@ -6,7 +6,6 @@ const PORT = 3000;
 app.use(express.json());
 // app.use(express.urlencoded({ extended: true }));
 
-// Endpoint para obtener la lista de contactos
 app.get("/contactos", async (req, res) => {
   try {
     const response = await axios.get("http://www.raydelto.org/agenda.php");
@@ -17,7 +16,6 @@ app.get("/contactos", async (req, res) => {
   }
 });
 
-// Endpoint para almacenar un nuevo contacto
 app.post("/contactos", async (req, res) => {
   try {
     const nuevoContacto = {
