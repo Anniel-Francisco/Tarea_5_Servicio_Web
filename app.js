@@ -11,9 +11,9 @@ app.get("/contactos", async (req, res) => {
   try {
     const response = await axios.get("http://www.raydelto.org/agenda.php");
     const contactos = response.data;
-    res.json(contactos);
+    res.send(contactos);
   } catch (error) {
-    res.status(500).json({ error: "No se pudieron obtener los contactos" });
+    res.status(500).send({ error: "No se pudieron obtener los contactos" });
   }
 });
 
@@ -30,9 +30,9 @@ app.post("/contactos", async (req, res) => {
       "http://www.raydelto.org/agenda.php",
       nuevoContacto
     );
-    res.json(response.data);
+    res.send(response.data);
   } catch (error) {
-    res.status(500).json({ error: "No se pudo almacenar el contacto" });
+    res.status(500).send({ error: "No se pudo almacenar el contacto" });
   }
 });
 
